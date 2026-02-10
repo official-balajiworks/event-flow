@@ -64,9 +64,9 @@ const Dashboard = () => {
       {/* Main content */}
       <div className="relative z-10 p-6 max-w-6xl mx-auto pt-20">
         {activeRole === 'organiser' ? (
-          <OrganiserDashboard userName={userName} />
+          <OrganiserDashboard userName={userName} userId={user.id} />
         ) : (
-          <ParticipantDashboard userName={userName} />
+          <ParticipantDashboard userName={userName} userId={user.id} />
         )}
       </div>
     </PageTransition>
